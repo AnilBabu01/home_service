@@ -7,12 +7,10 @@ import {
   useEditProviderMutation,
 } from '../../../redux/api';
 import InputField from '../../../components/Forms/Common/InputField';
-import SelectField from '../../../components/Forms/Common/SelectField';
-import SelectGroupOne from '../../../components/Forms/SelectGroup/SelectGroupOne';
 import CommonButton from '../../../components/Forms/Common/CommonButton';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { InputType } from '../../../types/DefinedTypes';
-import { FaTimesCircle, FaPlus } from 'react-icons/fa';
+import { FaTimesCircle, } from 'react-icons/fa';
 
 const EditProvider = () => {
   const navigate = useNavigate();

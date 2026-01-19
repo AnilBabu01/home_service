@@ -77,7 +77,7 @@ export const addBooking: RequestHandler = async (
       totalAmount: totalAmount,
       latitude,
       longitude,
-      advanceAmount: advanceAmount,
+      advanceAmount: 0,
       // contextual: 'contextual',
     });
 

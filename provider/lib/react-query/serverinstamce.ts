@@ -167,7 +167,7 @@ export const serverinstance = createApi({
 
     getMessages: builder.query({
       query: ({ chatId, page = 1, limit = 10, type = "provider" }) =>
-        `https://api.andamanhub.in/api/chats/${chatId}/?page=${page}&limit=${limit}&type=${type}`,
+        `https://001406ff4ce6.ngrok-free.app/api/chats/${chatId}/?page=${page}&limit=${limit}&type=${type}`,
 
       transformResponse: (response) => {
         console.log("Fetched Messages:", response);
@@ -179,7 +179,7 @@ export const serverinstance = createApi({
 
     sendMessage: builder.mutation({
       query: (data) => ({
-        url: "https://api.andamanhub.in/api/chats",
+        url: "https://001406ff4ce6.ngrok-free.app/api/chats",
         method: "POST",
         body: data,
       }),
@@ -206,7 +206,7 @@ export const serverinstance = createApi({
 
     getRooms: builder.query({
       query: ({ type }) =>
-        `https://api.andamanhub.in/api/chats/rooms?type=${type}`,
+        `https://001406ff4ce6.ngrok-free.app/api/chats/rooms?type=${type}`,
     }),
 
     bookingCancel: builder.mutation({
